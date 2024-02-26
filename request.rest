@@ -1,0 +1,22 @@
+@base_url = http://localhost:3000
+
+GET {{base_url}}/users
+
+###
+
+POST {{base_url}}/user
+Content-Type: application/json
+
+{
+  "name": "shimi tavori",
+  "email": "shimi@gmail.com",
+  "password": "456"
+}
+
+###
+
+@user_id = 42
+
+###
+
+DELETE {{base_url}}/users/{{user_id}}
